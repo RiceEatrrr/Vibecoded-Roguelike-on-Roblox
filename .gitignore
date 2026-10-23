@@ -6,3 +6,5 @@ rojo
 *.rbxl.lock
 *.rbxlx.lock
 sourcemap.json
+rojo.zip
+rojo-tmp/

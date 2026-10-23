@@ -23,13 +23,13 @@ The place file must contain these, which the scripts expect:
 
 ## Syncing into Studio with Rojo
 
-One-time setup:
+**Easy way (Windows):** double-click `start-rojo.bat`. The first time, it downloads Rojo and installs the Studio plugin (restart Studio afterwards). After that it just starts syncing. Then in Studio: **Plugins › Rojo › Connect**.
+
+Manual way:
 1. Install the **Rojo** plugin in Studio (Creator Store, search "Rojo").
 2. Download the Rojo program from <https://github.com/rojo-rbx/rojo/releases> (the Windows `.zip`), and put `rojo.exe` in this folder.
+3. Run `rojo serve` in this folder, then in Studio: **Plugins › Rojo › Connect**.
 
-Each session:
-1. Pull the latest changes (GitHub Desktop: **Fetch origin** › **Pull**).
-2. In this folder, run `rojo serve` (or `.\rojo.exe serve` in PowerShell).
-3. In Studio, open the place, then **Plugins › Rojo › Connect**.
+To get new changes: in GitHub Desktop, **Fetch origin** › **Pull**. Studio updates automatically while Rojo is connected.
 
 While connected, edit the four scripts above **only in this repo**. Changes made to them in Studio get overwritten. Everything else in the place is still edited in Studio; remember to publish the place as usual.
