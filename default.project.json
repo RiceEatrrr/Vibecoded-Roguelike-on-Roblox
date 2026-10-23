@@ -1,0 +1,22 @@
+{
+  "name": "Lumenfall-Shardfront",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$ignoreUnknownInstances": true,
+      "ShardfrontGame": { "$path": "src/server/ShardfrontGame.luau" },
+      "ShardfrontServer": { "$path": "src/server/ShardfrontServer.server.luau" }
+    },
+    "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
+      "ShardfrontView": { "$path": "src/shared/ShardfrontView.luau" }
+    },
+    "StarterPlayer": {
+      "$ignoreUnknownInstances": true,
+      "StarterPlayerScripts": {
+        "$ignoreUnknownInstances": true,
+        "ShardfrontClient": { "$path": "src/client/ShardfrontClient.client.luau" }
+      }
+    }
+  }
+}
